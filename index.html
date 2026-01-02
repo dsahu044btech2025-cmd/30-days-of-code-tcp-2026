@@ -1,88 +1,104 @@
 
-<!DOCTYPE html>
-<html lang="en">
+
+ <!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>College Event Registration</title>
 </head>
+
 <body>
-    <header>
-        <h1>Welcome to my portfolio</h1>
-        <img src="profile.jpeg" alt="My Profile Photo" width="150">
-        <h2>Divya Sahu</h2>
-    </header>
+
     
-    <nav>
-        <a href="#about">About</a>|
-        <a href="#skills">about</a>|
-        <a href="#projects"></a>
+    <h1>Annual Tech Fest 2026</h1>
+
+    <h2>Event Schedule</h2>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Activity</th>
+                <th>Venue</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>9:00 AM-10.00AM</td>
+                <td>Opening Ceremony</td>
+                <td>Heera Hall</td>
+            </tr>
+
+            <tr>
+                <td>10:00AM-5.00PM</td>
+                <td>Coding Contest</td>
+                <td>CCC Lab</td>
+            </tr>
         
-    </nav>
-    <main>
-        <section id="about">
-            <section id="about">
-  <h2>About Me</h2>
-  <p>
-    I am a first year computer science student.
-    i am learning basic programming and web development .
-  </p>
+        
 
-  <h3>strength and interests</h3>
-  <dl>
-    <dt>strength</dt>
-    <dd>disciplined</dd>
+            <tr>
+                <td>6:00 PM-7.00PM</td>
+                <td>Closing Ceremony</td>
+                <td>Heera Hall</td>
+            </tr>
 
-    <dt>interest</dt>
-    <dd>learning programming</dd>
-  </dl>
-</section>
-    </main>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML Basics</li>
-            <li>basic C++ Programming </li>
-            
-        </ul>
+        
+        </tbody>
+    </table>
 
-    </section>
+    <br><br>
 
-    <hr>
-    <section id="projects">
-        <h2>Projects</h2>
-        <article>
-            <h3>Simple Portfolio Website</h3>
-            <p>
-                This is my first HTML project.
-                I created a basic portfolio using HTML.
-            </p>
-        </article>
-    </section>
-    <hr>
-    <section>
-        <h2>learning video</h2>
-        <iframe width="300"height="200"
-        src="https://www.youtube.com/embed/HcOc7P5BMi4">
-    </iframe>
-    </section>
+    <!-- Registration Form -->
+    <h2>Registration Form</h2>
 
-    
+    <form method="post" action="#">
 
-    <hr>
-    <section>
-        <h2>motivation</h2>
-        <blockquote>
-            "Small steps every day lead to big results."
-            <cite>-unknown</cite>
-        </blockquote>
-    </section>
-    <hr>
+        <!-- Text Input -->
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name"><br><br>
 
-    <footer>
-        <p>Thankyou For Visiting My Portfolio.</p>
-        <a href="#about">Back to Top</a>
-    </footer>
-    </body>
-    </html>
+        <!-- Email Input -->
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <!-- Date Input -->
+        <label for="date">Event Date:</label><br>
+        <input type="date" id="date" name="date"><br><br>
+
+        <!-- Radio Buttons -->
+        <input type="radio" id="student" name="ticket" value="student">
+        <label for="student">student</label><br>
+        
+        <input type="radio" id="regular" name="ticket" value="regular">
+        <label for="regular">regular</label><br>
+
+        <input type="radio" id="vip" name="ticket" value="VIP">
+        <label for="vip">VIP</label><br><br>
+
+        <!-- Checkbox -->
+        <label>Workshop Preference:</label><br>
+       
+        <input type="checkbox" id="html" name="workshop" value="HTML">
+        <label for="html">HTML Basics</label><br>
+        
+        <input type="checkbox" id="Python" name="workshop" value-="Python">
+        <label for="Python">Python for beginners</label><br>
+
+        
+        
+        <input type="checkbox" id="cpp" name="workshop" value="C++">
+        <label for="cpp">C++ programming</label><br><br>
+
+        <!-- Textarea -->
+        <label for="comments">Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="30"></textarea><br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+
+    </form>
+
+</body>
+</html>
